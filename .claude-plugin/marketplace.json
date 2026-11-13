@@ -1,0 +1,13 @@
+{
+  "name": "goat-soft-glow",
+  "owner": {
+    "name": "GOAT Academy"
+  },
+  "plugins": [
+    {
+      "name": "goat-soft-glow",
+      "source": "./",
+      "description": "Soft Glow · Зөөлөн гэрэл: bright creamy beauty look for Reels/TikTok. Mongolian-first."
+    }
+  ]
+}
