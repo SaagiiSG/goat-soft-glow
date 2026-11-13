@@ -35,9 +35,14 @@ Claude өөрөө суулгана. Дараа нь `/reload-plugins` гэж б�
 /plugin install goat-soft-glow@goat-soft-glow
 ```
 
+**Zip файлаар авсан бол:**
+1. `goat-soft-glow.zip`-ийг задална. Задалсан `goat-soft-glow` хавтсаа устгалгүй үлдээгээрэй.
+2. Claude Code-д "Энэ хавтсан дахь plugin-ийг суулгаад өг:" гэж бичээд задалсан `goat-soft-glow` хавтсаа чирж оруулна.
+3. `/reload-plugins` гэж бичнэ.
+
 **Шинэ хувилбар гарвал:** Claude-д "goat-soft-glow plugin-ийг шинэчил" гэж хэлэхэд болно.
 
-> **For Claude Code:** to install this plugin, run `claude plugin marketplace add SaagiiSG/goat-soft-glow` and then `claude plugin install goat-soft-glow@goat-soft-glow`, then tell the user to type `/reload-plugins`. To update it: `claude plugin marketplace update goat-soft-glow` and then `claude plugin update goat-soft-glow@goat-soft-glow`.
+> **For Claude Code:** to install this plugin, run `claude plugin marketplace add SaagiiSG/goat-soft-glow` (or, from an unzipped copy, `claude plugin marketplace add <path to the goat-soft-glow folder>`) and then `claude plugin install goat-soft-glow@goat-soft-glow`, then tell the user to type `/reload-plugins`. To update it: `claude plugin marketplace update goat-soft-glow` and then `claude plugin update goat-soft-glow@goat-soft-glow`.
 
 ---
 
