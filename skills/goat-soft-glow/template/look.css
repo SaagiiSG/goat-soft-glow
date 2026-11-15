@@ -1,0 +1,18 @@
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond-Italic%5Bwght%5D.ttf"); font-weight: 300 700; font-style: italic; }
+@font-face { font-family: "Manrope"; src: url("fonts/Manrope%5Bwght%5D.ttf"); font-weight: 200 800; }
+
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #F6F1EA; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #F6F1EA; }
+
+/* The footage, full screen; each shot drifts in from the centre. */
+#drift { position: absolute; inset: 0; transform-origin: 50% 50%; }
+#clip { display: block; width: 1080px; height: 1920px; }
+/* Four cream layers (preview .cream #FBF8F3): cut dips, the fade in, the fade out, the title cards. */
+.cream { position: absolute; inset: 0; background: #FBF8F3; opacity: 0; }
+
+/* preview .card: Cormorant Garamond italic 300 124px, cocoa; Manrope 300, letter-spacing .32em, latte
+   (30px there, 40px here so a phone number reads on a phone). Centred on x 540; padding-left balances the
+   spacing CSS adds after the last letter. */
+#words > div { position: absolute; left: 540px; top: 0; white-space: nowrap; text-align: center; opacity: 0; }
+.title { font: italic 300 124px/1.05 "Cormorant Garamond", serif; color: #4A3F38; }
+.sub { font: 300 40px/1.5 "Manrope", sans-serif; letter-spacing: 0.32em; padding-left: 0.32em; color: #7A6B60; text-transform: uppercase; }

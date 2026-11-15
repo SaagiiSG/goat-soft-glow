@@ -1,7 +1,7 @@
 {
   "name": "goat-soft-glow",
-  "version": "1.0.0",
-  "description": "Soft Glow · Зөөлөн гэрэл: turns phone clips into a bright, creamy, softly glowing video with lifted shadows, slow drifts, cream fades and cream title cards with thin italic serif Mongolian words. Renders a 1080x1920 MP4 for Reels/TikTok.",
+  "version": "2.0.0",
+  "description": "Soft Glow · Зөөлөн гэрэл: turns phone clips into a bright, creamy, softly glowing video with lifted shadows, a bloom, slow drifts, cream fades and cream title cards with thin italic serif Mongolian words that blur into focus, built on HyperFrames. Renders a 1080x1920 MP4 for Reels/TikTok.",
   "author": {
     "name": "GOAT Academy"
   },
@@ -15,7 +15,8 @@
     "glow",
     "soft",
     "mongolian",
-    "ffmpeg"
+    "ffmpeg",
+    "hyperframes"
   ],
   "license": "MIT",
   "repository": "https://github.com/SaagiiSG/goat-soft-glow"
