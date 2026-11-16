@@ -152,9 +152,10 @@ export async function prepare(ctx) {
   return { drifts: drifts(cuts, ctx.dur), dips: dipTimes(cuts, ctx.dur, spans), spans, words };
 }
 
-// Soft on purpose (Saagii, 14 Nov: "tone down"; v1 played it at 0.8); members raise it with "sfx": {"volume": …}.
-// A title already up on frame 0 doesn't come into focus, so it gets none.
+// About 30% of v1's 0.8 (Saagii, 16 Nov: "bring the sounds effects down a bit"); members raise it with
+// "sfx": {"volume": …}. A title already up on frame 0 doesn't come into focus, so it gets none. Titles are 2 s apart
+// at least (CARD_MIN), so two shimmers never come within 0.5 s.
 export function sfx(plan, ctx) {
   return cards(plan.texts ?? [], ctx.dur).words.filter((w) => w.role === "title" && w.start >= FIRST)
-    .map((w) => ({ sound: "shimmer", at: r3(w.start + 0.5), volume: 0.4 }));
+    .map((w) => ({ sound: "shimmer", at: r3(w.start + 0.5), volume: 0.24 }));
 }
