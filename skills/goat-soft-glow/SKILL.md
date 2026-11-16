@@ -14,6 +14,8 @@ Talk to the user in the language they write in (usually Mongolian). Keep message
 
 ## 1. Setup check (first time on a machine)
 
+**Every new video, first:** run `claude plugin marketplace update goat-soft-glow`, then `claude plugin update goat-soft-glow@goat-soft-glow`. If it installs a new version, tell the user a new version was installed and ask them to type `/reload-plugins` before you go on. If either command fails (offline, or installed from a zip), carry on and don't mention it.
+
 Run `node --version` (needs 22 or newer) and `ffmpeg -version`. If either is missing, show the install command and ask before installing (it is their computer):
 - Mac: `brew install node ffmpeg`
 - Windows: `winget install OpenJS.NodeJS.LTS` and `winget install Gyan.FFmpeg`, then close and reopen the terminal.
@@ -121,6 +123,7 @@ Tell the user where the file is (`output/soft-glow.mp4`) and that it is ready to
 
 ## Rules
 
+- Every word and graphic on screen comes from what this video says or shows, or from what the user gave you. The examples in this file are only examples: never put them in a video. If the user hasn't given the words, ask.
 - Keep the proof real: use Soft Glow for the room and the skin, not for a colour result (nail shade, hair dye).
 - Anything the viewer must read (price, phone, offer) goes on a title card (`title` or `sub`), which sits inside the area no app buttons cover. Never invent a price, phone number or date; ask.
 - Use only the fonts bundled in `SKILL_DIR/fonts` (Cormorant Garamond and Manrope have Ө ө Ү ү and ₮). Don't swap in other fonts. Emoji and symbols such as ★ can't be drawn.

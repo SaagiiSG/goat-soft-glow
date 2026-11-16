@@ -44,9 +44,26 @@ Claude өөрөө суулгана. Дараа нь `/reload-plugins` гэж б�
 2. Claude Code-д "Энэ хавтсан дахь plugin-ийг суулгаад өг:" гэж бичээд задалсан `goat-soft-glow` хавтсаа чирж оруулна.
 3. `/reload-plugins` гэж бичнэ.
 
-**Шинэ хувилбар гарвал:** Claude-д "goat-soft-glow plugin-ийг шинэчил" гэж хэлэхэд болно.
+---
 
-> **For Claude Code:** to install this plugin, run `claude plugin marketplace add SaagiiSG/goat-soft-glow` (or, from an unzipped copy, `claude plugin marketplace add <path to the goat-soft-glow folder>`) and then `claude plugin install goat-soft-glow@goat-soft-glow`, then tell the user to type `/reload-plugins`. To update it: `claude plugin marketplace update goat-soft-glow` and then `claude plugin update goat-soft-glow@goat-soft-glow`.
+## Шинэчлэлт
+
+Автомат шинэчлэлт анхандаа унтраалттай байдаг. Бид таны өмнөөс асааж чадахгүй тул нэг удаа өөрөө асаана:
+1. Claude Code дотор `/plugin` гэж бичнэ.
+2. **Marketplaces** → **goat-soft-glow** → **Enable auto-update** дээр дарна.
+
+Ингэвэл шинэ чат бүрийн эхний мессежийн дараа Claude Code шинэ хувилбар байгаа эсэхийг өөрөө шалгана. "Plugin updated" гэж гарвал `/reload-plugins` гэж бичнэ.
+
+**Гараар шинэчлэх:** Claude-д "goat-soft-glow plugin-ийг шинэчил" гэж хэлэхэд болно. Эсвэл terminal дээр энэ 2 мөрийг ээлжлэн бичнэ:
+```
+claude plugin marketplace update goat-soft-glow
+claude plugin update goat-soft-glow@goat-soft-glow
+```
+Дараа нь Claude Code дотор `/reload-plugins` гэж бичих эсвэл Claude Code-оо хаагаад дахин нээнэ.
+
+**Zip файлаас суулгасан бол** plugin өөрөө шинэчлэгдэхгүй. Шинэ хувилбар авахын тулд дээрх GitHub-ийн аргаар суулгаарай.
+
+> **For Claude Code:** to install this plugin, run `claude plugin marketplace add SaagiiSG/goat-soft-glow` (or, from an unzipped copy, `claude plugin marketplace add <path to the goat-soft-glow folder>`) and then `claude plugin install goat-soft-glow@goat-soft-glow`, then tell the user to type `/reload-plugins`. To update it: run `claude plugin marketplace update goat-soft-glow` and then `claude plugin update goat-soft-glow@goat-soft-glow`, then tell the user to type `/reload-plugins`. Auto-update is off by default; the user turns it on once in `/plugin` → Marketplaces → goat-soft-glow → Enable auto-update. A copy installed from an unzipped folder never updates by itself; to get updates, install it from GitHub (`SaagiiSG/goat-soft-glow`) instead.
 
 ---
 
